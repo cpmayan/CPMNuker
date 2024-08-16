@@ -201,7 +201,7 @@ if __name__ == "__main__":
                 console.print("[bold cyan][!] Insert how much coins do you want.[/bold cyan]")
                 amount = IntPrompt.ask("[bold][?] Amount[/bold]")
                 console.print("[bold cyan][%] Saving your data[/bold cyan]: ", end=None)
-                if amount > 0 and amount <= 90000:
+                if amount > 0 and amount <= 200000:
                     if cpm.set_player_coins(amount):
                         console.print("[bold green]SUCCESSFUL.[/bold green]")
                         console.print("==================================")
@@ -238,7 +238,7 @@ if __name__ == "__main__":
                 console.print("[bold cyan][!] Enter your new ID.[/bold cyan]")
                 new_id = Prompt.ask("[bold][?] ID[/bold]")
                 console.print("[bold cyan][%] Saving your data[/bold cyan]: ", end=None)
-                if len(new_id) >= 9 and len(new_id) <= 14 and (' ' in new_id) == False:
+                if len(new_id) >= 2 and len(new_id) <= 50 and (' ' in new_id) == False:
                     if cpm.set_player_localid(new_id.upper()):
                         console.print("[bold green]SUCCESSFUL.[/bold green]")
                         console.print("==================================")
@@ -477,7 +477,7 @@ if __name__ == "__main__":
                 console.print("[bold cyan][!] Insert how much races you win.[/bold cyan]")
                 amount = IntPrompt.ask("[bold][?] Amount[/bold]")
                 console.print("[bold cyan][%] Changing your data[/bold cyan]: ", end=None)
-                if amount > 0 and amount <= 999:
+                if amount > 0 and amount <= 10000000:
                     if cpm.set_player_wins(amount):
                         console.print("[bold green]SUCCESSFUL.[/bold green]")
                         console.print("==================================")
@@ -498,7 +498,7 @@ if __name__ == "__main__":
                 console.print("[bold cyan][!] Insert how much races you lose.[/bold cyan]")
                 amount = IntPrompt.ask("[bold][?] Amount[/bold]")
                 console.print("[bold cyan][%] Changing your data[/bold cyan]: ", end=None)
-                if amount > 0 and amount <= 999:
+                if amount > 0 and amount <= 10000000:
                     if cpm.set_player_loses(amount):
                         console.print("[bold green]SUCCESSFUL.[/bold green]")
                         console.print("==================================")
